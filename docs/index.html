@@ -1,356 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Software Eats Research</title>
+	<title>Shower Presentation Engine</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=1284, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-<!--	<link rel="stylesheet" href="../shower/themes/bright/styles/screen.css">  -->
-	<link rel="stylesheet" href="https://rawgithub.com/shower/bright/master/styles/screen.css"> 
-	<link rel="shortcut icon" href="pictures/CFA_Logo_Color.ico" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
 </head>
-<body class="list">
-
-<!-- Header -->
+<body class="shower list">
 	<header class="caption">
-		<h1>Software Eats Research</h1>
-		<p><a href="https://github.com/dbetebenner">Damian Betebenner, Center for Assessment</a> </br> <a href="https://github.com/adamvi">Adam VanIwaarden, University of Colorado, Boulder</a></p>
+		<h1>Shower Presentation Engine</h1>
+		<p>Yours Truly, Famous Inc.</p>
 	</header>
-
-<!-- Cover Slide -->
-
-	<section class="slide cover" id="Cover"><div>
-		<h2>Software Eats Research</h2>
-		<p><a href="https://github.com/dbetebenner">Damian Betebenner, Center for Assessment</a> </br> <a href="https://github.com/adamvi">Adam VanIwaarden, University of Colorado, Boulder</a></p>
-		<img src="pictures/eating.jpg" height="100%" alt="">
+	<section class="slide" id="cover">
+		<h2>Shower Presentation Engine</h2>
+		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
+		<img src="pictures/cover.jpg" alt="" class="cover">
 		<!--
 			To apply styles to the certain slides
 			set slide ID to get needed elements
 			-->
 		<style>
-			#Cover h2 {
+			#cover h2 {
 				margin:30px 0 0;
 				color:#FFF;
 				text-align:center;
 				font-size:70px;
 				}
-			#Cover p {
+			#cover p {
 				margin:10px 0 0;
 				text-align:center;
 				color:#FFF;
 				font-style:italic;
 				font-size:20px;
 				}
-			#Cover p a {
+				#cover p a {
+					color:#FFF;
+					}
+		</style>
+	</section>
+	<section class="slide">
+		<h2>Shower key features</h2>
+		<ol>
+			<li>Built on HTML, CSS and vanilla JavaScript</li>
+			<li>Works in all modern browsers</li>
+			<li>Themes are separated from engine</li>
+			<li>Modular and extensible</li>
+			<li>Fully keyboard accessible</li>
+			<li>Printable to PDF</li>
+		</ol>
+		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+	</section>
+	<section class="slide">
+		<h2>Plain text on your slides</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+	</section>
+	<section class="slide">
+		<h2>Two columns if you like</h2>
+		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+	</section>
+	<section class="slide">
+		<h2>All kind of lists</h2>
+		<ol>
+			<li>Simple lists are marked with bullets</li>
+			<li>Ordered lists begin with a number</li>
+			<li>You can even nest lists one inside another
+				<ul>
+					<li>Or mix their types</li>
+					<li>But do not go too far</li>
+					<li>Otherwise audience will be bored</li>
+				</ul>
+			</li>
+			<li>Look, seven rows exactly!</li>
+		</ol>
+	</section>
+	<section class="slide">
+		<h2>Serious citations</h2>
+		<figure>
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+			</blockquote>
+			<figcaption>Marcus Tullius Cicero</figcaption>
+		</figure>
+	</section>
+	<section class="slide">
+		<h2>Code samples</h2>
+		<pre>
+			<code>&lt;!DOCTYPE html&gt;</code>
+			<code class="mark">&lt;html lang="en"&gt;</code>
+			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
+			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
+			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
+			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
+			<code><mark>&lt;/head&gt;</mark></code>
+		</pre>
+	</section>
+	<section class="slide">
+		<h2>Even tables</h2>
+		<table>
+		<tr>
+			<th scope="col">Locavore</th>
+			<th>Umami</th>
+			<th>Helvetica</th>
+			<th>Vegan</th>
+		</tr>
+		<tr>
+			<th scope="row">Fingerstache</th>
+			<td>Kale</td>
+			<td>Chips</td>
+			<td>Keytar</td>
+		</tr>
+		<tr>
+			<th scope="row">Sriracha</th>
+			<td>Gluten-free</td>
+			<td>Ennui</td>
+			<td>Keffiyeh</td>
+		</tr>
+		<tr>
+			<th scope="row">Thundercats</th>
+			<td>Jean</td>
+			<td>Shorts</td>
+			<td>Biodiesel</td>
+		</tr>
+		<tr>
+			<th scope="row">Terry</th>
+			<td>Richardson</td>
+			<td>Swag</td>
+			<td>Blog</td>
+		</tr>
+		</table>
+		<p>It’s good to have information organized.</p>
+	</section>
+	<section class="slide" id="picture">
+		<h2>Pictures</h2>
+		<img src="pictures/picture.jpg" alt="" class="cover">
+		<style>
+			#picture h2 {
 				color:#FFF;
 				}
 		</style>
-	</div></section>
-
-<!-- Slide -->
-
-	<section class="slide" id="Andreessen"><div>
-			<blockquote>
-				<p>Software will eat the world!</p>
-			</blockquote>
-			<figcaption>Marc Andreessen, 2009, Inventor Mosaic/Netscape</figcaption>
-		<style>
-			#Andreessen blockquote {
-				margin:100px 0 0;
-				font-size:60px;
-				}
-			#Andreessen figcaption {
-				text-align:right;
-				}
-		</style>
-	</div></section>
-
-<!-- Slide -->
-
-	<section class="slide" ><div>
-		<img src="pictures/Data_Science_VD.png" height="95%" alt="" class="place">
-		<footer>
-			Drew Conway's Data Science Venn Diagram
-		</footer>
-	</div></section>
-
-
-<!-- Slide -->
-
-	<section class="slide" id="Data_Scientist_Sexy"><div>
-		<img src="pictures/Data_Science_VD.png" height="95%" alt="" class="place">
-		<blockquote>
-			<p>Data Scientist: The Sexiest Job of the 21st Century</p>
-		</blockquote>
-		<figcaption>Harvard Business Review, October, 2012</figcaption>
-		<style>
-			#Data_Scientist_Sexy blockquote {
-				margin:100px 0 0;
-				font-size:50px;
-				}
-			#Data_Scientist_Sexy figcaption {
-				text-align:right;
-				}
-			#Data_Scientist_Sexy img {
-				opacity:0.2;
-				}
-		</style>
-	</div></section>
-
-
-<!-- Slide -->
-
-	<section class="slide" id="Data_Gold_Rush"><div>
-		<h2>The Data Gold Rush, by Michael Dell (April 2, 2014)</h2>
-		<a href="https://www.linkedin.com/today/post/article/20140402213559-25383300-a-new-gold-rush-is-on-who-will-strike-it-rich"><img src="pictures/Data_Gold_Rush.png" height="100%" alt="" class="place"></a>
-	</div></section>
-
-
-<!-- Slide -->
-
-	<section class="slide" id="Data_Science_Venn_Diagram_1"><div>
-		<h2>Data Science: What is it?</h2>
-		<ul>
-			<li class="next">As data proliferate (mega, giga, tera, peta, exa, zetta, yotta), individuals capable of managing and extracting meaning from data are key.</li>
-			<li class="next">Data Scientist: Knows more statistics than a computer scientist and more computer science than a statistician.</li>
-			<li class="next">Data "products" as opposed to data analysis.</li>
-			<li class="next"><a href="http://sciencecareers.sciencemag.org/career_magazine/previous_issues/articles/2014_03_04/caredit.a1400058">Median Salary of $117,500.</a></li>
-			<li class="next">Graduate programs in Data Science at Berkeley and NYU.</li>
-		</ul>
-		<img src="pictures/Data_Science_VD.png" height="95%" alt="" class="place">
-		<footer>
-			Drew Conway's Data Science Venn Diagram
-		</footer>
-		<style>
-			#Data_Science_Venn_Diagram_1 img {
-				opacity:0.2;
-				}
-		</style>
-	</div></section>
-
-
-<!-- Slide -->
-
-	<section class="slide" id="Data_Science_Venn_Diagram_2"><div>
-		<h2>What's changed?</h2>
+	</section>
+	<section class="slide">
+		<h2 class="shout shrink">You can even shout this way</h2>
+	</section>
+	<section class="slide">
+		<h2>Inner navigation</h2>
 		<ol>
-			<h3>Commodity hardware</h3>
-			<ul>
-				<li class="next">Processing power is huge compared to just 5 years ago.</li>
-				<li class="next">Computer memory and storage is immense compared to just 5 years ago.</li>
-				<li class="next">Cloud computing/Platform as a Service (PaaS) providers (e.g., Amazon Web Services) lower access/cost barriers to entry.</li>
-				<li class="next">Computers (virtual machines) can be rented eliminating capital costs.</li>
-			</ul>
+			<li>Lets you reveal list items one by one</li>
+			<li class="next">To keep some key points</li>
+			<li class="next">In secret from audience</li>
+			<li class="next">But it will work only once</li>
+			<li class="next">Nobody wants to see the same joke twice</li>
 		</ol>
-		<img src="pictures/Data_Science_VD.png" height="95%" alt="" class="place">
-		<footer>
-			Commodity hardware tied to infrastructure as a service providers like Amazon Web Services
-		</footer>
+	</section>
+	<section class="slide grid">
+		<h2>All nicely aligned to grid</h2>
+	</section>
+	<section class="slide" id="see-more">
+		<h2 class="shout">
+			<img src="pictures/logo.svg" alt="Shower logo">
+			<a href="https://github.com/shower/shower">See more on GitHub</a>
+		</h2>
 		<style>
-			#Data_Science_Venn_Diagram_2 img {
-				opacity:0.2;
+			#see-more h2 {
+				font-size:100px
+				}
+			#see-more img {
+				width:0.72em;
+				height:0.72em;
 				}
 		</style>
-	</div></section>
-
-
-<!-- Slide -->
-
-	<section class="slide" id="Data_Science_Venn_Diagram_3"><div>
-		<h2>What's changed?</h2>
-		<ol>
-			<h3>Open Source Software</h3>
-			<ul>
-				<li class="next">A model of software development and distribution distinguished from proprietary software.</li>
-				<li class="next">Includes operating systems like Linux/Unix/Android as well as application software like R.</li>
-				<li class="next">Inexpensive (free).</li>
-				<li class="next">Business models focus on building services around software.</li>
-				<li class="next">Communities rapidly emerging around the development and distribution of open source software (e.g., GitHub).</li>
-			</ul>
-		</ol>
-		<img src="pictures/Data_Science_VD.png" height="95%" alt="" class="place">
-		<footer>
-			Open source software allowing rapid and inexpensive (free) innovation
-		</footer>
-		<style>
-			#Data_Science_Venn_Diagram_3 img {
-				opacity:0.2;
-				}
-		</style>
-	</div></section>
-
-
-<!-- Slide -->
-
-	<section class="slide" id="Data_Science_Venn_Diagram_4"><div>
-		<h2>What's changed?</h2>
-		<ol>
-			<h3>The World Wide Web</h3>
-			<ul>
-				<li class="next">Fundamentally alters the way in which people communicate and collaborate.</li>
-				<li class="next">Research papers become research websites.</li>
-				<li class="next">Now possible to rapidly co-develop software and share data (even confidential data) used for data analysis.</li>
-				<li class="next">A very small team can now do what previously took an army of researchers.</li>
-			</ul>
-		</ol>
-		<img src="pictures/Data_Science_VD.png" height="95%" alt="" class="place">
-		<footer>
-			The World Wide Web transforms modes of communication and collaboration.
-		</footer>
-		<style>
-			#Data_Science_Venn_Diagram_4 img {
-				opacity:0.2;
-				}
-		</style>
-	</div></section>
-
-
-<!-- Slide -->
-
-	<section class="slide" id="Goals"><div>
-		<h2>Goals for Today</h2>
-
-		<ul>
-			<li class="next">Create a GitHub account, clone a repository.</li>
-			<li class="next">Install R and Rtools (Windows) on your computer.</li>
-			<li class="next">Write a simple R package and commit to GitHub.</li>
-			<li class="next">Install package from GitHub both locally and in the cloud/AWS.</li>
-			<li class="next">Create GitHub page for project.</li> 
-		</ul>
-	</div></section>
-
-
-<!-- Slide -->
-
-	<section class="slide" ><div>
-		<h2>Let's get organized: Version Control</h2>
-
-		<ul>
-			<li class="next">Data analysis is often a solitary endeavor.</li>
-			<li class="next">Keeping track of what one is doing is usually idiosyncratic.</li>
-			<li class="next">Software developers created version control systems to allow for teams to build software together well.</li>
-			<li class="next">Subversion and Git (created by Linux inventor Linus Torvalds) are two of the best known version control software.</li>
-		</ul>
-	</div></section>
-
-
-<!-- Slide -->
-
-	<section class="slide" id="GitHub_1"><div>
-		<h2>GitHub</h2>
-
-		<ul>
-			<li class="next">GitHub is a web-based version of Git that allows for hosting of code repositories.</li>
-			<li class="next">GitHub mantra: Collaboration without coordination.</li> 
-			<li class="next"><a href="http://www.makeuseof.com/tag/just-coders-9-ways-use-github-creative-work/">Used for more than just software development.</a></li> 
-			<li class="next">Has allowed Adam and I to work together with dozens of states on SGP analyses.</li> 
-			<li class="next">Data analysts often have their own personal way of doing version control (file naming conventions).</li> 
-		</ul>
-		<img src="pictures/github_social_coding.jpeg" width="95%" alt="" class="place">
-		<style>
-			#GitHub_1 img {
-				opacity:0.1;
-				}
-		</style>
-	</div></section>
-
-
-<!-- Slide -->
-
-	<section class="slide" id="GitHub_2"><div>
-		<h2>GitHub</h2>
-
-		<ul>
-			<li class="next">Besides version control, GitHub provides versioning statistics as well as FREE static website hosting for each project.</li>
-			<li class="next">Version control and project hosting all in one!</li> 
-			<li class="next"><a href="http://netflix.github.io/#repo">Netflix develops and showcases it tools on GitHub.</a></li> 
-			<li class="next"><a href="http://sgp.io">Can also forward to alternate domain names.</a></li> 
-		</ul>
-		<img src="pictures/github_social_coding.jpeg" width="95%" alt="" class="place">
-		<style>
-			#GitHub_2 img {
-				opacity:0.1;
-				}
-		</style>
-	</div></section>
-
-
-<!-- Slide -->
-
-	<section class="slide" id="Data_Science_Collaboration"><div>
-		<h2>GitHub for Data</h2>
-		<img src="pictures/US_Open_Data_Institute.png" width="100%" alt="" class="place">
-	</div></section>
-
-
-<!-- Slide -->
-
-	<section class="slide" id="R"><div>
-		<h2>R</h2>
-
-		<ul>
-			<li class="next">R is an object oriented, open source software environment used for statistical computing and data visualization.</li>
-			<li class="next">Started as a dialect of the S programming language in 1993 by Ross Ihaka and Robert Gentleman.</li> 
-			<li class="next">Competes with proprietary software analysis tools like SAS, SPSS, Stata.</a></li> 
-			<li class="next">R is highly extensible via packages that are easy to install from CRAN or GitHub.</li> 
-		</ul>
-		<img src="pictures/R_logo.jpeg" height="95%" alt="" class="place">
-		<style>
-			#R img {
-				opacity:0.1;
-				}
-		</style>
-	</div></section>
-
-
-<!-- Slide -->
-
-	<section class="slide" id="Cloud_Computing"><div>
-		<h2>Cloud Computing/Amazon Web Services (AWS)</h2>
-
-		<ul>
-			<li class="next">Cloud computing platforms allow users access to remote computing services.</li>
-			<li class="next">Amazon Web Services is the most prominent example of such a platform (Platform as a Service/PaaS).</li> 
-			<li class="next"><a href="http://aws.amazon.com/">Provides dozens of services.</a></li> 
-			<li class="next">For data analysis, high-end virtual machines are available for cluster computing (e.g., AWS/EC2, elastic cloud computing).</a></li> 
-		</ul>
-		<img src="pictures/Amazon AWS plus EC2 logo_scaled-399x87.png" width="95%" alt="" class="place">
-		<style>
-			#Cloud_Computing img {
-				opacity:0.1;
-				}
-		</style>
-	</div></section>
-
-
-<!-- Slide -->
-
-	<section class="slide" id="Learning More"><div>
-		<h2>Learning More</h2>
-
-		<ul>
-			<li class="next">The Internet (Yeah right, where does one start?)</li>
-			<li class="next">Seriously, code examples are everywhere on the internet.</li>
-			<li class="next"><a href="http://www.stackoverflow.com">Stackoverflow: Often referenced with Google searches.</a></li> 
-			<li class="next"><a href="http://www.twitter.com">Twitter: Start following interesting people.</a></li> 
-			<li class="next"><a href="http://www.getprismatic.com">Prismatic: News/Information collation.</a></li> 
-		</ul>
-	</div></section>
-
-
-
-
-
-
-
-
-	<p class="badge"><a href="https://github.com/dbetebenner/Presentations/tree/master/NCME_Training_Session_2014">Fork me on GitHub</a></p>
+	</section>
+	<p class="badge">
+		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
+	</p>
 	<!--
 		To hide progress bar from entire presentation
 		just remove “progress” element.
 		-->
-	<div class="progress"><div></div></div>
-<!--	<script src="../shower/shower.min.js"></script> -->
-	<script src="http://rawgithub.com/shower/core/master/shower.min.js"></script>
+	<div class="progress"></div>
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2015 Yours Truly, Famous Inc. -->
+	<!-- Photos by John Carey, fiftyfootshadows.net -->
 </body>
 </html>
