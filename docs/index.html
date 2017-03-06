@@ -7,39 +7,97 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/dbetebenner/Presentations/0117d0a2/shower/themes/material/styles/screen-16x10.css">
 	<script src="https://cdn.rawgit.com/dbetebenner/Presentations/0117d0a2/shower/shower.min.js"></script>
+	<style>
+		body {
+			font: 16pt Avenir;
+		}
+		a:link {
+			text-decoration-line:none;
+		}
+		a:visited {
+			text-decoration-line:none;
+		}
+		a:hover {
+			text-decoration-line:underline;
+		}
+	</style>
 </head>
 <body class="shower list">
+
+<!-- Header -->
 	<header class="caption">
-		<h1>Foolish Consistency</h1>
+		<h1>A Foolish Consistency</h1>
 		<p>Damian Betebenner, Center for Assessment</p>
 	</header>
+
+<!-- Cover Slide -->
 	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
-		<img src="pictures/cover.jpg" alt="" class="cover">
-		<!--
-			To apply styles to the certain slides
-			set slide ID to get needed elements
-			-->
+		<h2>A Foolish Consistency</h2>
+		<p><a href="https://github.com/dbetebenner">Damian Betebenner</br></a></p>
+		<p><a href="https://github.com/centerforassessment">Center for Assessment</br></a></p>
+		<p><a href="https://gibhub.com/debetebenner/Presentation_030717" target="_blank">Staff Presentation:  March 7th, 2017</a></p>
+		<img src="pictures/stormtrooper-1343772_1920.jpg" alt="" height=100% class="cover">
 		<style>
 			#cover h2 {
-				margin:30px 0 0;
-				color:#FFF;
+				margin:50px 0 0;
+				color:black;
 				text-align:center;
-				font-size:70px;
+				font:70px Avenir;
 				}
 			#cover p {
 				margin:10px 0 0;
 				text-align:center;
-				color:#FFF;
+				color:black;
 				font-style:italic;
-				font-size:20px;
+				font:30px Avenir;
 				}
-				#cover p a {
-					color:#FFF;
-					}
+			#cover p a:link {
+				color: #111;
+				text-decoration-line:none;
+				te
+				}
+			#cover p a:visited {
+				color: #111;
+				text-decoration-line:none;
+				}
+			#cover p a:hover {
+				color: #111;
+				text-decoration-line:underline;
+				}
+			#cover img {
+				opacity:0.3;
+				}
 		</style>
 	</section>
+
+	<section class="slide" id="emerson1">
+		<figure>
+			<blockquote>
+				<p>A foolish consistency is the hobgoblin of little minds, adored by little statesmen and philosophers and divines.</p>
+			</blockquote>
+			<figcaption>Ralph Waldo Emerson</figcaption>
+		</figure>
+		<style>
+			#emerson1 blockquote {
+				font-size:35px;
+				}
+		</style>
+	</section>
+
+	<section class="slide" id="emerson2">
+		<figure>
+			<blockquote>
+				<p>A foolish consistency is the hobgoblin of little minds, adored by little statesmen and philosophers and divines and <font color="red"> measurement experts</font>.</p>
+			</blockquote>
+			<figcaption>Ralph Waldo Emerson <font color="red"> (Damian Betebenner)</font></figcaption>
+		</figure>
+		<style>
+			#emerson2 blockquote {
+				font-size:35px;
+				}
+		</style>
+	</section>
+
 	<section class="slide">
 		<h2>Shower key features</h2>
 		<ol>
